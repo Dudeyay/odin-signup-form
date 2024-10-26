@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sign-up Form</title>
 </head>
+
 <body>
-    <div class="sidebar"></div>
+    
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./odin-lined.png">
+            Odin
+        </div>
+        <img src="./halie-west-25xggax4bSA-unsplash.jpg">
+    </div>
     <div class="container">
         <div class="heading">
             <h2 class="first">
-                This is not real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <i>now</i> to get started. <br><br> You <i>know</i> you want to.
+                This is not real online service! You know you need something like this in your life to help you realize
+                your deepest dreams. <br>Sign up <i>now</i> to get started. <br><br> You <i>know</i> you want to.
             </h2>
         </div>
-        <div class="form">
-            <form>
+
+        <form>
+            <div class="up">
                 <h2>Let's do this!</h2>
                 <ul>
                     <li>
                         <label for="">FIRST NAME</label>
-                        <input type="text">
-                    </li>
-                    <li>
-                        <label for="">EMAIL</label>
-                        <input type="text">
-                    </li>
-                    <li>
-                        <label for="">PASSWORD</label>
-                        <input type="text">
+                        <input type="text" onclick="this.select()">
                     </li>
                     <li>
                         <label for="">LAST NAME</label>
-                        <input type="text">
+                        <input type="text" />
+                    </li>
+                    <li>
+                        <label for="">EMAIL</label>
+                        <input type="email">
                     </li>
                     <li>
                         <label for="">PHONE NUMBER</label>
-                        <input type="text">
+                        <input type="tel">
+                    </li>
+                    <li>
+                        <label for="">PASSWORD</label>
+                        <input type="password" required>
                     </li>
                     <li>
                         <label for="">CONFIRM PASSWORD</label>
                         <input type="text">
                     </li>
-                    
+
                 </ul>
-            </form>
-        </div>
-        
+            </div>
+            <div class="down">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </form>
+
+
     </div>
 </body>
+
 </html>
